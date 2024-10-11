@@ -28,4 +28,4 @@ def get_transcript():
         return f"<h2>Error fetching transcript for video {video_id}:</h2><p>{str(e)}</p>"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
